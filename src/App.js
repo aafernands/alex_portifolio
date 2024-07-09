@@ -16,7 +16,7 @@ function App() {
           <Grid item xs={12}>
             <Paper style={{ padding: '20px' }}>
               <Typography variant="h4" component="h2" gutterBottom>
-                Welcome to My Portfolio
+                Welcome t My Portfolio
               </Typography>
               <Button variant="contained" color="primary">
                 Get Started
