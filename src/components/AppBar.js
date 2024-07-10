@@ -11,7 +11,7 @@ export default function ButtonAppBar() {
   return (
     <Box sx={{ flexGrow: 1 }} >
       <AppBar position="static">
-        <Toolbar style={{backgroundColor: "#1C1C1C"}}>
+        <Toolbar style={{backgroundColor: "#02182B"}}>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             FNDS Labs
           </Typography>
