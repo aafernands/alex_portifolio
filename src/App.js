@@ -63,7 +63,7 @@ function App() {
                  Skills{" "}
               </Typography>
               <Typography variant="body1" component="p" gutterBottom>
-                * I am enthusiastic about leveraging my technical skills and
+                I am enthusiastic about leveraging my technical skills and
                 creativity to solve real-world challenges and deliver engaging
                 digital solutions. Whether it's crafting elegant front-end
                 designs or implementing complex back-end functionalities, I am
