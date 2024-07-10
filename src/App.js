@@ -28,10 +28,32 @@ function App() {
               carefully crafted code and user-centric design.
               </Typography>
               <Button variant="contained" color="primary">
-                Get Started
+                PROJECTS
               </Button>
             </Paper>
+            
           </Grid>
+
+          <Grid item xs={12}>
+            <Paper style={{ padding: "20px" }}>
+              <Typography variant="h4" component="h2" gutterBottom>
+                HI THERE! I'M ALEX FERNANDES
+              </Typography>
+              <Typography variant="body1" component="p" gutterBottom>
+              I'm a Web Developer student based in New Jersey, United States. I
+              strive to build immersive and beautiful web applications through
+              carefully crafted code and user-centric design.
+              </Typography>
+              <Button variant="contained" color="primary">
+                PROJECTS
+              </Button>
+            </Paper>
+            
+          </Grid>
+
+
+
+
         </Grid>
       </Container>
     </div>
