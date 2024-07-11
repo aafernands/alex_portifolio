@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alatsi&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 
 body {
@@ -26,11 +26,12 @@ code {
 
 
 /* H1 */
-.aldrich-regular {
-  font-family: "Aldrich", sans-serif;
+.anton-regular {
+  font-family: "Anton", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
+
 
 /* Body */
 

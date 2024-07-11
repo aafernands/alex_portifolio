@@ -4,6 +4,7 @@ import "./App.css";
 import { Typography, Container, Button, Grid, Paper } from "@mui/material";
 import MyAppBar from "./components/AppBar"; // Import the AppBar component
 import Greeting from "./components/Greeting"; // Import the AppBar component
+import Footer from "./components/Footer"; // Import the AppBar component
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -22,16 +23,12 @@ function App() {
       <MyAppBar />
 
       <Container>
-        <Grid  spacing={3} style={{ padding: "20px" }}>
-          <Grid item xs={12} >
+        <Grid spacing={3} style={{ padding: "20px" }}>
+          <Grid item xs={12}>
             {/* <Typography  variant="h1" component="h1" gutterBottom>
                 HI THERE! I'M ALEX FERNANDES
               </Typography> */}
-              <Greeting />
-          
-           
-
-           
+            <Greeting />
           </Grid>
 
           <Grid item xs={12}>
@@ -187,7 +184,10 @@ function App() {
           </Grid>
         </Grid>
       </Container>
+      <Footer />
+
     </div>
+    
   );
 }
 

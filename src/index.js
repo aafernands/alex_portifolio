@@ -14,9 +14,10 @@ const theme = createTheme({
       fontSize: "3rem",
       color: "black",
       textAlign: "center",
-      fontFamily: 'Aldrich, Arial, sans-serif', // Ensure fallback fonts are provided
+      fontFamily: 'Anton, Arial, sans-serif', // Ensure fallback fonts are provided
     },
     h5: {
+      fontSize: '1rem',
       color: "white",
       textAlign: "left",
       fontFamily: 'Aldrich, Arial, sans-serif', // Ensure fallback fonts are provided
@@ -34,6 +35,8 @@ const theme = createTheme({
   
     body2: {
       fontFamily: "Questrial, Arial, sans-serif", // Ensure fallback fonts are provided
+      textAlign: "center",
+
     },
     button: {
      color: "red" 
