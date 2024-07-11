@@ -6,14 +6,18 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
+import logo from '../images/logo.png';
 
 export default function ButtonAppBar() {
   return (
     <Box sx={{ flexGrow: 1 }} >
-      <AppBar position="static">
+      <AppBar position="fixed">
+        
         <Toolbar style={{backgroundColor: "#02182B"}}>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            FNDS Labs
+        <img src={logo} alt="Logo" style={{ height: '40px', marginRight: '10px' }} />
+
+          <Typography variant="h5" component="div" sx={{ flexGrow: 1 }}>
+            ALEX FERNANDES
           </Typography>
           {/* <Button color="inherit">Login</Button>{" "} */}
           <IconButton
