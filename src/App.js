@@ -1,4 +1,6 @@
 import React from "react";
+import './App.css';
+
 import { Typography, Container, Button, Grid, Paper } from "@mui/material";
 import MyAppBar from "./components/AppBar"; // Import the AppBar component
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -13,28 +15,23 @@ import { List, ListItem, ListItemIcon, ListItemText } from "@mui/material";
 import { CheckCircleOutline } from "@mui/icons-material";
 
 function App() {
+
   return (
     <div>
-      {/* <AppBar position="static">
-        <Toolbar>
-          <Typography variant="h6">
-            My Portfolio
-          </Typography>
-        </Toolbar>
-      </AppBar> */}
-
       <MyAppBar />
 
-      <Container>
-        <Grid container spacing={3} style={{ paddingTop: "20px" }}>
+      <Container  >
+        <Grid container spacing={3} style={{ padding: "20px" }}>
           <Grid
             item
             xs={12}
-            style={{ backgroundColor: "#DADDD8", padding: "20px" }}
+            style={{ backgroundColor: "" }}
           >
-              <Typography variant="h4" component="h2" gutterBottom>
+              {/* <Typography  variant="h1" component="h1" gutterBottom>
                 HI THERE! I'M ALEX FERNANDES
-              </Typography>
+              </Typography> */}
+
+              
               <Typography variant="body1" component="p" gutterBottom>
                 I'm a Web Developer student based in New Jersey, United States.
                 I strive to build immersive and beautiful web applications
@@ -47,7 +44,7 @@ function App() {
           </Grid>
 
           <Grid item xs={12}>
-            <Paper style={{ padding: "20px" }}>
+            <Paper  style={{ padding: "20px" }}>
               <Typography variant="h4" component="h2" gutterBottom>
                 ABOUT{" "}
               </Typography>
@@ -164,12 +161,12 @@ function App() {
             </Paper>
           </Grid>
 
-          <Grid item xs={12}>
+          <Grid  item xs={12}>
             <Paper style={{ padding: "20px" }}>
               <Typography variant="h4" component="h2" gutterBottom>
                 PROJECTS{" "}
               </Typography>
-              <Typography variant="body1" component="p" gutterBottom>
+              <Typography className="questrial-regular" variant="body1" component="p" gutterBottom>
                 I'm a Web Developer student based in New Jersey, United States.
                 I strive to build immersive and beautiful web applications
                 through carefully crafted code and user-centric design.
