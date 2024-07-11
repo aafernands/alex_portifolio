@@ -17,9 +17,8 @@ const theme = createTheme({
       fontFamily: 'Aldrich, Arial, sans-serif', // Ensure fallback fonts are provided
     },
     h5: {
-      fontSize: "3rem",
       color: "white",
-      textAlign: "center",
+      textAlign: "left",
       fontFamily: 'Aldrich, Arial, sans-serif', // Ensure fallback fonts are provided
     },
     h6: {
@@ -60,10 +59,10 @@ const theme = createTheme({
           // Add any other custom styles here
         },
         containedPrimary: {
-          backgroundColor: '#E6E49F', // Custom background color for primary contained buttons
+          backgroundColor: '#EDD500', // Custom background color for primary contained buttons
           color: '#25291C',
           '&:hover': {
-            backgroundColor: '#E3E7D3', // Custom hover color for primary contained buttons
+            backgroundColor: '#E6E6EA', // Custom hover color for primary contained buttons
           },
         },
         outlinedSecondary: {
