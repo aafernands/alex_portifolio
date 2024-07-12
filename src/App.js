@@ -6,6 +6,7 @@ import MyAppBar from "./components/AppBar"; // Import the MyAppBar component
 import Greeting from "./components/Greeting"; // Import the Greeting component
 import Footer from "./components/Footer"; // Import the Footer component
 import ContactForm from "./components/ContactForm"; // Import the ContactForm component
+import Skills from "./components/Skills"; // Import the Skills component
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -15,8 +16,6 @@ import {
   faAngular,
   faReact,
 } from "@fortawesome/free-brands-svg-icons";
-import { List, ListItem, ListItemIcon, ListItemText } from "@mui/material";
-import { CheckCircleOutline } from "@mui/icons-material";
 
 function App() {
   const homeRef = useRef(null);
@@ -71,52 +70,7 @@ function App() {
               or implementing complex back-end functionalities, I am committed
               to delivering high-quality results that exceed expectations.
             </Typography>
-            <div variant="p" component="p">
-            <List>
-              <ListItem>
-                <ListItemIcon>
-                  <CheckCircleOutline />
-                </ListItemIcon>
-                <strong>Front-end Development: </strong> Proficient in HTML5,
-                CSS3, JavaScript, and various front-end frameworks like React.js
-                and Bootstrap.
-              </ListItem>
-              <ListItem>
-                <ListItemIcon>
-                  <CheckCircleOutline />
-                </ListItemIcon>{" "}
-                <strong>Back-end Development: </strong>Experienced in Node.js,
-                Express, MongoDB, and MySQL for building robust server-side
-                applications.{" "}
-              </ListItem>
-              <ListItem>
-                <ListItemIcon>
-                  <CheckCircleOutline />
-                </ListItemIcon>{" "}
-                <strong>Full Stack Proficiency:</strong>
-                Skilled in integrating front-end and back-end technologies to
-                develop scalable and responsive web applications.{" "}
-              </ListItem>
-              <ListItem>
-                <ListItemIcon>
-                  <CheckCircleOutline />
-                </ListItemIcon>{" "}
-                <strong>Version Control and Deployment:</strong>
-                Familiar with Git for version control and deploying applications
-                using platforms like GitHub and Heroku.{" "}
-              </ListItem>
-              <ListItem>
-                <ListItemIcon>
-                  <CheckCircleOutline />
-                </ListItemIcon>{" "}
-                <strong> UI/UX Design Principles: </strong>
-                Knowledgeable about designing intuitive user interfaces and
-                enhancing user experience through responsive design and
-                accessibility practices.{" "}
-              </ListItem>
-            </List>
-            </div>
-            
+            <Skills />
             <br />{" "}
           </Grid>
 

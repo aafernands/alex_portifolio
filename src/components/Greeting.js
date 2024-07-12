@@ -39,7 +39,7 @@ const Greeting = () => {
         <br />
         <Typography
           style={{ textAlign: "center", padding: "20px" }}
-          variant="h6"
+          variant="p"
           component="p"
           gutterBottom
         >
