@@ -11,12 +11,20 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 
-const drawerWidth = "100%";
+const drawerWidth = "50%";
 
-const scrollToSection = (sectionId) => {
+const scrollToSection = (sectionId, setMobileOpen) => {
   const section = document.getElementById(sectionId);
   if (section) {
-    section.scrollIntoView({ behavior: "smooth", block: "start" });
+    const offset = -64; // Adjust this value according to the height of your AppBar or any fixed header
+    const elementPosition = section.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset + offset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+    setMobileOpen(false); // Close the drawer
   }
 };
 
@@ -30,37 +38,19 @@ const MenuDrawer = () => {
   const drawer = (
     <div>
       <List>
-        <Button
-          onClick={() => scrollToSection("home")}
-        //   variant="contained"
-        //   color="primary"
-        >
+        <Button onClick={() => scrollToSection("home", setMobileOpen)}>
           HOME
         </Button>
-        < br/>
-        <Button
-          onClick={() => scrollToSection("about")}
-        //   variant="contained"
-        //   color="primary"
-        >
+        <br/>
+        <Button onClick={() => scrollToSection("about", setMobileOpen)}>
           ABOUT
         </Button>
-        < br/>
-
-        <Button
-          onClick={() => scrollToSection("projects")}
-        //   variant="contained"
-        //   color="primary"
-        >
+        <br/>
+        <Button onClick={() => scrollToSection("projects", setMobileOpen)}>
           PROJECTS
         </Button>
-        < br/>
-
-        <Button
-          onClick={() => scrollToSection("contact")}
-        //   variant="contained"
-        //   color="primary"
-        >
+        <br/>
+        <Button onClick={() => scrollToSection("contact", setMobileOpen)}>
           CONTACT
         </Button>
       </List>
@@ -102,7 +92,7 @@ const MenuDrawer = () => {
         <Box sx={{ display: "flex" }}>
           {["HOME", "ABOUT", "PROJECTS", "CONTACT"].map((text) => (
             <Box key={text} sx={{ mx: 2 }}>
-              <ListItem button onClick={() => scrollToSection(text.toLowerCase())}>
+              <ListItem button onClick={() => scrollToSection(text.toLowerCase(), setMobileOpen)}>
                 <ListItemText primary={text} />
               </ListItem>
             </Box>

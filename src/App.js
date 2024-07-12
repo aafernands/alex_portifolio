@@ -5,6 +5,7 @@ import { Typography, Container, Grid } from "@mui/material";
 import MyAppBar from "./components/AppBar"; // Import the AppBar component
 import Greeting from "./components/Greeting"; // Import the AppBar component
 import Footer from "./components/Footer"; // Import the AppBar component
+import ContactForm from "./components/ContactForm"; // Import the ContactForm component
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -115,8 +116,8 @@ function App() {
           </Grid>
 
           <Grid
-          container
-          spacing={2}
+            container
+            spacing={2}
             item
             sm={12}
             md={6}
@@ -167,42 +168,8 @@ function App() {
               high-quality results that exceed expectations.
             </Typography>
           </Grid>
-
           <Grid item xs={12}>
-            <Typography id="contact" variant="h4" component="h2" gutterBottom>
-              CONTACT{" "}
-            </Typography>
-            <Typography variant="body1" component="p" gutterBottom>
-              I'm a Web Developer student based in New Jersey, United States. I
-              strive to build immersive and beautiful web applications through
-              carefully crafted code and user-centric design. I am enthusiastic
-              about leveraging my technical skills and creativity to solve
-              real-world challenges and deliver engaging digital solutions.
-              Whether it's crafting elegant front-end designs or implementing
-              complex back-end functionalities, I am committed to delivering
-              high-quality results that exceed expectations. I am enthusiastic
-              about leveraging my technical skills and creativity to solve
-              real-world challenges and deliver engaging digital solutions.
-              Whether it's crafting elegant front-end designs or implementing
-              complex back-end functionalities, I am committed to delivering
-              high-quality results that exceed expectations. I'm a Web Developer
-              student based in New Jersey, United States. I strive to build
-              immersive and beautiful web applications through carefully crafted
-              code and user-centric design. I am enthusiastic about leveraging
-              my technical skills and creativity to solve real-world challenges
-              and deliver engaging digital solutions. Whether it's crafting
-              elegant front-end designs or implementing complex back-end
-              functionalities, I am committed to delivering high-quality results
-              that exceed expectations. I am enthusiastic about leveraging my
-              technical skills and creativity to solve real-world challenges and
-              deliver engaging digital solutions. Whether it's crafting elegant
-              front-end designs or implementing complex back-end
-              functionalities, I am committed to delivering high-quality results
-              that exceed expectations.
-            </Typography>
-            {/* <Button variant="contained" color="primary">
-                PROJECTS
-              </Button> */}
+            <ContactForm />
           </Grid>
         </Grid>
       </Container>
