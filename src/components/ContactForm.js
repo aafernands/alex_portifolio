@@ -1,10 +1,20 @@
 import React, { useState, useEffect } from "react";
-import { Container, Grid, Box, TextField, Button, Typography } from "@mui/material";
+import {
+  Container,
+  Grid,
+  Box,
+  TextField,
+  Button,
+  Typography,
+} from "@mui/material";
 
 const ContactForm = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
-  const [countdown, setCountdown] = useState(10);
+  const [countdown, setCountdown] = useState(3); // Change countdown to 3 seconds
   const [showForm, setShowForm] = useState(true); // Manage form visibility
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -16,12 +26,13 @@ const ContactForm = () => {
         method: "POST",
         body: formData,
         headers: {
-          'Accept': 'application/json'
-        }
+          Accept: "application/json",
+        },
       });
       if (response.ok) {
         setFormSubmitted(true);
         setShowForm(false); // Hide the form after submission
+        setCountdown(3); // Reset countdown timer
       } else {
         console.error("Form submission error:", response.statusText);
       }
@@ -39,6 +50,9 @@ const ContactForm = () => {
             clearInterval(timer);
             setFormSubmitted(false); // Reset form submission state
             setShowForm(true); // Show the form again
+            setName(""); // Clear form fields
+            setEmail("");
+            setMessage("");
           }
           return prevCountdown - 1;
         });
@@ -49,7 +63,13 @@ const ContactForm = () => {
 
   return (
     <Container>
-      <Grid id="contact" container justifyContent="center" alignItems="center" style={{ minHeight: "100vh" }}>
+      <Grid
+        id="contact"
+        container
+        justifyContent="center"
+        alignItems="center"
+        style={{ minHeight: "100vh" }}
+      >
         <Grid item xs={12} md={8} lg={6}>
           <Box
             component="form"
@@ -74,6 +94,8 @@ const ContactForm = () => {
               variant="outlined"
               fullWidth
               required
+              value={name}
+              onChange={(e) => setName(e.target.value)}
             />
             <TextField
               name="email"
@@ -81,6 +103,8 @@ const ContactForm = () => {
               variant="outlined"
               fullWidth
               required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
             <TextField
               name="message"
@@ -90,19 +114,35 @@ const ContactForm = () => {
               required
               multiline
               rows={4}
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
             />
-            <Button
-              variant="contained"
-              color="primary"
-              type="submit"
-              fullWidth
-            >
+            <Button variant="contained" color="primary" type="submit" fullWidth>
               Send
             </Button>
           </Box>
           {formSubmitted && (
-            <Box mt={2} display="flex" flexDirection="column" alignItems="center">
-              <Typography style={{color: "green"}} variant="h5" component="h2" gutterBottom align="center">
+            <Box
+            sx={{
+              
+              padding: "20px",
+              border: "1px solid lightgray",
+              borderRadius: "8px",
+              boxShadow: 3,
+              backgroundColor: "white",
+            }}
+              mt={2}
+              display="flex"
+              flexDirection="column"
+              alignItems="center"
+            >
+              <Typography
+                style={{ color: "green" }}
+                variant="h5"
+                component="h2"
+                gutterBottom
+                align="center"
+              >
                 Thank you for your message!
               </Typography>
               <Typography variant="body1" align="center">
