@@ -2,7 +2,6 @@ import React from "react";
 import { Box, Button, Container, Typography } from "@mui/material";
 
 const Greeting = () => {
-
   const scrollToProjects = () => {
     const projectsSection = document.getElementById("projects");
 
@@ -24,22 +23,33 @@ const Greeting = () => {
       <Box
         sx={{
           padding: "20px",
+          textAlign: "center"
         }}
       >
-        <Typography color="#25291C" variant="h1" component="div" sx={{ flexGrow: 1 }}>
+        <Typography
+          color="#25291C"
+          variant="h1"
+          component="div"
+          sx={{ flexGrow: 1 }}
+        >
           HI THERE! I'M ALEX FERNANDES
         </Typography>
-        <br /> 
         <br />
         <br />
-        <Typography variant="h6" component="p" gutterBottom>
-              I'm a Web Developer student based in New Jersey, United States. I
-              strive to build immersive and beautiful web applications through
-              carefully crafted code and user-centric design.
-            </Typography>
-            <br />
-            <Button onClick={scrollToProjects} variant="contained" color="primary">
-            PROJECTS
+        <br />
+        <Typography
+          style={{ textAlign: "center", padding: "20px" }}
+          variant="h6"
+          component="p"
+          gutterBottom
+        >
+          I'm a Web Developer student based in New Jersey, United States. I
+          strive to build immersive and beautiful web applications through
+          carefully crafted code and user-centric design.
+        </Typography>
+        <br />
+        <Button  onClick={scrollToProjects} variant="contained" color="primary">
+          PROJECTS
         </Button>
       </Box>
     </Container>

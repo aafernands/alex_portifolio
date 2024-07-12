@@ -16,6 +16,13 @@ const theme = createTheme({
       textAlign: "center",
       fontFamily: 'Anton, Arial, sans-serif', // Ensure fallback fonts are provided
     },
+    h4: {
+      // fontSize: '1rem',
+      textAlign: "center",
+      fontWeight: "400",
+      padding: "20px",
+      fontFamily: 'Anton, Arial, sans-serif', // Ensure fallback fonts are provided
+    },
     h5: {
       fontSize: '1rem',
       color: "white",
@@ -30,11 +37,11 @@ const theme = createTheme({
     p: {
       color: "#25291C",
       textAlign: "left",
-      fontFamily: 'Questrial, Arial, sans-serif', // Ensure fallback fonts are provided
+      fontFamily: 'Aldrich, Arial, sans-serif', // Ensure fallback fonts are provided
     },
   
     body2: {
-      fontFamily: "Questrial, Arial, sans-serif", // Ensure fallback fonts are provided
+      fontFamily: "Aldrich, Arial, sans-serif", // Ensure fallback fonts are provided
       textAlign: "center",
 
     },

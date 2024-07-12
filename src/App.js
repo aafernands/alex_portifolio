@@ -2,9 +2,9 @@ import React, { useRef } from "react";
 import "./App.css";
 
 import { Typography, Container, Grid } from "@mui/material";
-import MyAppBar from "./components/AppBar"; // Import the AppBar component
-import Greeting from "./components/Greeting"; // Import the AppBar component
-import Footer from "./components/Footer"; // Import the AppBar component
+import MyAppBar from "./components/AppBar"; // Import the MyAppBar component
+import Greeting from "./components/Greeting"; // Import the Greeting component
+import Footer from "./components/Footer"; // Import the Footer component
 import ContactForm from "./components/ContactForm"; // Import the ContactForm component
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -44,11 +44,13 @@ function App() {
             <Greeting />
           </Grid>
 
-          <Grid item xs={12}>
+          <Grid item xs={12} style={{ textAlign: "center" }}>
             <Typography id="about" variant="h4" component="h2" gutterBottom>
               ABOUT{" "}
             </Typography>
-            <Typography variant="body1" component="p" gutterBottom>
+            <br />
+
+            <Typography variant="p" component="p" gutterBottom>
               I am a passionate and dedicated web developer based in New Jersey,
               USA, with a strong foundation in front-end and back-end
               development technologies. With a background in Pharmacy and a
@@ -69,6 +71,7 @@ function App() {
               or implementing complex back-end functionalities, I am committed
               to delivering high-quality results that exceed expectations.
             </Typography>
+            <div variant="p" component="p">
             <List>
               <ListItem>
                 <ListItemIcon>
@@ -112,6 +115,8 @@ function App() {
                 accessibility practices.{" "}
               </ListItem>
             </List>
+            </div>
+            
             <br />{" "}
           </Grid>
 
