@@ -4,6 +4,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 
 const drawerWidth = "100%";
 
+
 export default function MenuDrawer() {
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
@@ -23,6 +24,10 @@ export default function MenuDrawer() {
     </div>
   );
 
+
+
+
+  
   return (
     <Box>
       <Hidden mdUp>
@@ -32,7 +37,6 @@ export default function MenuDrawer() {
           edge="end"
           onClick={handleDrawerToggle}
           sx={{ ml: 2 }}
-          
         >
           <MenuIcon />
         </IconButton>
@@ -43,7 +47,6 @@ export default function MenuDrawer() {
           onClose={handleDrawerToggle}
           ModalProps={{
             keepMounted: true, // Better open performance on mobile.
-            
           }}
           sx={{
             "& .MuiDrawer-paper": { marginTop: 7, boxSizing: "border-box", width: drawerWidth },

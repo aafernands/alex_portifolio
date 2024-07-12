@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./App.css";
 
 import { Typography, Container, Button, Grid, Paper } from "@mui/material";
@@ -18,13 +18,19 @@ import { List, ListItem, ListItemIcon, ListItemText } from "@mui/material";
 import { CheckCircleOutline } from "@mui/icons-material";
 
 function App() {
+  const homeRef = useRef(null);
+  const aboutRef = useRef(null);
+  const projectsRef = useRef(null);
+  const contactRef = useRef(null);
 
-
+  const scrollToSection = (sectionRef) => {
+    sectionRef.current.scrollIntoView({ behavior: "smooth" });
+  };
 
 
   return (
     <div>
-      <MyAppBar />
+      <MyAppBar scrollToSection={scrollToSection} homeRef={homeRef} aboutRef={aboutRef} projectsRef={projectsRef} contactRef={contactRef} />
 
       <Container>
         <Grid spacing={3} style={{ padding: "20px" }}>
@@ -37,7 +43,7 @@ function App() {
 
           <Grid item xs={12}>
             <Paper style={{ padding: "20px" }}>
-              <Typography variant="h4" component="h2" gutterBottom>
+              <Typography id="about" variant="h4" component="h2" gutterBottom>
                 ABOUT{" "}
               </Typography>
               <Typography variant="body1" component="p" gutterBottom>
@@ -155,7 +161,7 @@ function App() {
 
           <Grid item xs={12}>
             <Paper style={{ padding: "20px" }}>
-              <Typography variant="h4" component="h2" gutterBottom>
+              <Typography id="projects" variant="h4" component="h2" gutterBottom>
                 PROJECTS{" "}
               </Typography>
               <Typography
@@ -173,7 +179,7 @@ function App() {
 
           <Grid item xs={12}>
             <Paper style={{ padding: "20px" }}>
-              <Typography variant="h4" component="h2" gutterBottom>
+              <Typography id="contact" variant="h4" component="h2" gutterBottom>
                 CONTACT{" "}
               </Typography>
               <Typography variant="body1" component="p" gutterBottom>
@@ -181,9 +187,9 @@ function App() {
                 I strive to build immersive and beautiful web applications
                 through carefully crafted code and user-centric design.
               </Typography>
-              <Button variant="contained" color="primary">
+              {/* <Button variant="contained" color="primary">
                 PROJECTS
-              </Button>
+              </Button> */}
             </Paper>
           </Grid>
         </Grid>

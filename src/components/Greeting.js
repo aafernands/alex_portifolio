@@ -2,6 +2,14 @@ import React from "react";
 import { Box, Button, Container, Typography } from "@mui/material";
 
 const Greeting = () => {
+
+  const scrollToProjects = () => {
+    const projectsSection = document.getElementById("projects"); // Replace with the actual id of your projects section
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     <Container
       sx={{
@@ -29,8 +37,8 @@ const Greeting = () => {
               carefully crafted code and user-centric design.
             </Typography>
             <br />
-        <Button variant="contained" color="primary" style={{alignItems: "center"}}>
-          PROJECTS
+            <Button onClick={scrollToProjects} variant="contained" color="primary">
+            PROJECTS
         </Button>
       </Box>
     </Container>

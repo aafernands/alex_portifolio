@@ -3,7 +3,6 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import IconButton from "@mui/material/IconButton";
 import logo from "../images/logo.png";
 import { makeStyles } from "@material-ui/styles";
 import MenuDrawer from "./MenuDrawer";
@@ -28,11 +27,10 @@ export default function ButtonAppBar() {
           <img src={logo} alt="Logo" className={classes.img} />
           <Typography variant="h5" component="div" className={classes.title}>
             F.N.D.S Labs
-          </Typography>                <MenuDrawer />
-
+          </Typography>
+          <MenuDrawer />
         </Toolbar>
       </AppBar>
-
     </Box>
   );
 }
