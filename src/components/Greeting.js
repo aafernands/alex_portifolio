@@ -4,7 +4,8 @@ import { Box, Button, Container, Typography } from "@mui/material";
 const Greeting = () => {
 
   const scrollToProjects = () => {
-    const projectsSection = document.getElementById("projects"); // Replace with the actual id of your projects section
+    const projectsSection = document.getElementById("projects");
+
     if (projectsSection) {
       projectsSection.scrollIntoView({ behavior: "smooth", block: "start" });
     }

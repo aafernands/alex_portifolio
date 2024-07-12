@@ -27,13 +27,18 @@ function App() {
     sectionRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
-
   return (
     <div>
-      <MyAppBar scrollToSection={scrollToSection} homeRef={homeRef} aboutRef={aboutRef} projectsRef={projectsRef} contactRef={contactRef} />
+      <MyAppBar
+        scrollToSection={scrollToSection}
+        homeRef={homeRef}
+        aboutRef={aboutRef}
+        projectsRef={projectsRef}
+        contactRef={contactRef}
+      />
 
       <Container>
-        <Grid spacing={3} style={{ padding: "20px" }}>
+        <Grid id="home" spacing={3} style={{ padding: "20px" }}>
           <Grid item xs={12}>
             {/* <Typography  variant="h1" component="h1" gutterBottom>
                 HI THERE! I'M ALEX FERNANDES
@@ -161,7 +166,12 @@ function App() {
 
           <Grid item xs={12}>
             <Paper style={{ padding: "20px" }}>
-              <Typography id="projects" variant="h4" component="h2" gutterBottom>
+              <Typography
+                id="projects"
+                variant="h4"
+                component="h2"
+                gutterBottom
+              >
                 PROJECTS{" "}
               </Typography>
               <Typography
@@ -172,7 +182,22 @@ function App() {
               >
                 I'm a Web Developer student based in New Jersey, United States.
                 I strive to build immersive and beautiful web applications
-                through carefully crafted code and user-centric design.
+                through carefully crafted code and user-centric design. I am
+                enthusiastic about leveraging my technical skills and creativity
+                to solve real-world challenges and deliver engaging digital
+                solutions. Whether it's crafting elegant front-end designs or
+                implementing complex back-end functionalities, I am committed to
+                delivering high-quality results that exceed expectations. I am
+                enthusiastic about leveraging my technical skills and creativity
+                to solve real-world challenges and deliver engaging digital
+                solutions. Whether it's crafting elegant front-end designs or
+                implementing complex back-end functionalities, I am committed to
+                delivering high-quality results that exceed expectations. I am
+                enthusiastic about leveraging my technical skills and creativity
+                to solve real-world challenges and deliver engaging digital
+                solutions. Whether it's crafting elegant front-end designs or
+                implementing complex back-end functionalities, I am committed to
+                delivering high-quality results that exceed expectations.
               </Typography>
             </Paper>
           </Grid>
@@ -185,7 +210,17 @@ function App() {
               <Typography variant="body1" component="p" gutterBottom>
                 I'm a Web Developer student based in New Jersey, United States.
                 I strive to build immersive and beautiful web applications
-                through carefully crafted code and user-centric design.
+                through carefully crafted code and user-centric design. I am
+                enthusiastic about leveraging my technical skills and creativity
+                to solve real-world challenges and deliver engaging digital
+                solutions. Whether it's crafting elegant front-end designs or
+                implementing complex back-end functionalities, I am committed to
+                delivering high-quality results that exceed expectations. I am
+                enthusiastic about leveraging my technical skills and creativity
+                to solve real-world challenges and deliver engaging digital
+                solutions. Whether it's crafting elegant front-end designs or
+                implementing complex back-end functionalities, I am committed to
+                delivering high-quality results that exceed expectations.
               </Typography>
               {/* <Button variant="contained" color="primary">
                 PROJECTS
@@ -195,9 +230,7 @@ function App() {
         </Grid>
       </Container>
       <Footer />
-
     </div>
-    
   );
 }
 

@@ -1,11 +1,26 @@
 import * as React from "react";
-import { Drawer, List, ListItem, ListItemText, IconButton, Hidden, Box } from "@mui/material";
+import {
+  Button,
+  Drawer,
+  List,
+  ListItem,
+  ListItemText,
+  IconButton,
+  Hidden,
+  Box,
+} from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 
 const drawerWidth = "100%";
 
+const scrollToSection = (sectionId) => {
+  const section = document.getElementById(sectionId);
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+};
 
-export default function MenuDrawer() {
+const MenuDrawer = () => {
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const handleDrawerToggle = () => {
@@ -15,19 +30,43 @@ export default function MenuDrawer() {
   const drawer = (
     <div>
       <List>
-        {["HOME", "ABOUT", "PROJECTS", "CONTACT"].map((text) => (
-          <ListItem button key={text}>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
+        <Button
+          onClick={() => scrollToSection("home")}
+        //   variant="contained"
+        //   color="primary"
+        >
+          HOME
+        </Button>
+        < br/>
+        <Button
+          onClick={() => scrollToSection("about")}
+        //   variant="contained"
+        //   color="primary"
+        >
+          ABOUT
+        </Button>
+        < br/>
+
+        <Button
+          onClick={() => scrollToSection("projects")}
+        //   variant="contained"
+        //   color="primary"
+        >
+          PROJECTS
+        </Button>
+        < br/>
+
+        <Button
+          onClick={() => scrollToSection("contact")}
+        //   variant="contained"
+        //   color="primary"
+        >
+          CONTACT
+        </Button>
       </List>
     </div>
   );
 
-
-
-
-  
   return (
     <Box>
       <Hidden mdUp>
@@ -49,17 +88,21 @@ export default function MenuDrawer() {
             keepMounted: true, // Better open performance on mobile.
           }}
           sx={{
-            "& .MuiDrawer-paper": { marginTop: 7, boxSizing: "border-box", width: drawerWidth },
+            "& .MuiDrawer-paper": {
+              marginTop: 7,
+              boxSizing: "border-box",
+              width: drawerWidth,
+            },
           }}
         >
           {drawer}
         </Drawer>
       </Hidden>
       <Hidden mdDown>
-        <Box  sx={{ display: "flex" }}>
+        <Box sx={{ display: "flex" }}>
           {["HOME", "ABOUT", "PROJECTS", "CONTACT"].map((text) => (
             <Box key={text} sx={{ mx: 2 }}>
-              <ListItem button>
+              <ListItem button onClick={() => scrollToSection(text.toLowerCase())}>
                 <ListItemText primary={text} />
               </ListItem>
             </Box>
@@ -68,4 +111,6 @@ export default function MenuDrawer() {
       </Hidden>
     </Box>
   );
-}
+};
+
+export default MenuDrawer;
