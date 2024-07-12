@@ -28,10 +28,11 @@ export default function ButtonAppBar() {
           <img src={logo} alt="Logo" className={classes.img} />
           <Typography variant="h5" component="div" className={classes.title}>
             F.N.D.S Labs
-          </Typography>
-          <MenuDrawer />
+          </Typography>                <MenuDrawer />
+
         </Toolbar>
       </AppBar>
+
     </Box>
   );
 }

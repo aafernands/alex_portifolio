@@ -32,6 +32,7 @@ export default function MenuDrawer() {
           edge="end"
           onClick={handleDrawerToggle}
           sx={{ ml: 2 }}
+          
         >
           <MenuIcon />
         </IconButton>
@@ -42,16 +43,17 @@ export default function MenuDrawer() {
           onClose={handleDrawerToggle}
           ModalProps={{
             keepMounted: true, // Better open performance on mobile.
+            
           }}
           sx={{
-            "& .MuiDrawer-paper": { boxSizing: "border-box", width: drawerWidth },
+            "& .MuiDrawer-paper": { marginTop: 7, boxSizing: "border-box", width: drawerWidth },
           }}
         >
           {drawer}
         </Drawer>
       </Hidden>
       <Hidden mdDown>
-        <Box sx={{ display: "flex" }}>
+        <Box  sx={{ display: "flex" }}>
           {["HOME", "ABOUT", "PROJECTS", "CONTACT"].map((text) => (
             <Box key={text} sx={{ mx: 2 }}>
               <ListItem button>
