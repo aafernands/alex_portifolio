@@ -115,6 +115,8 @@ function App() {
           </Grid>
 
           <Grid
+          container
+          spacing={2}
             item
             sm={12}
             md={6}
