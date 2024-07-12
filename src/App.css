@@ -49,3 +49,15 @@
 
 
 
+
+
+.icon {
+  font-size: 4rem;
+  color: #02182B;
+  margin: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon:hover {
+  transform: scale(1.2); /* Increase size on hover */
+}
