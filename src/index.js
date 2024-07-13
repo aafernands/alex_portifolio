@@ -31,9 +31,11 @@ const theme = createTheme({
       fontFamily: 'Aldrich, Arial, sans-serif', // Ensure fallback fonts are provided
     },
     h6: {
+      fontSize: '1rem',
+      fontWeight: "bold",
       color: "#25291C",
-      textAlign: "left",
-      fontFamily: 'Questrial, Arial, sans-serif', // Ensure fallback fonts are provided
+      textAlign: "center",
+      fontFamily: 'Anton, Arial, sans-serif', // Ensure fallback fonts are provided
     },
     p: {
       color: "#25291C",

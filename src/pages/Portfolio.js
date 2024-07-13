@@ -1,7 +1,7 @@
 import * as React from "react";
 import { makeStyles } from '@mui/styles';
 import { Typography, Container, Grid } from "@mui/material";
-import Projects from "../Portifolio/Projects";
+import Projects from "../components/Projects/Projects";
 
 const useStyles = makeStyles((theme) => ({
 

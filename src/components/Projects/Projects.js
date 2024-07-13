@@ -1,6 +1,6 @@
 import React from "react";
 import Thumbnail from "./Thumbnail.js"; // Import the Thumbnail component
-import password from "./Password.png"; // Import the Thumbnail component
+import password from "./Password.png"; // Import the Thumbnail component  my-portfolio\src\images\Books.png
 import quiz from "./Quiz.png"; // Import the Thumbnail component
 import weather from "./Weather.png"; // Import the Thumbnail component
 import scheduler from "./Scheduler.png"; // Import the Thumbnail component
@@ -18,10 +18,13 @@ const useStyles = makeStyles((theme) => ({
 		marging: "20px",
 		padding: "20px",
 		textAlign: "center",
-		background: "#313131be",
+		backgroundColor: "",
 		boxShadow: "2.5px 5px 4px #fff",
 		color: "white",
 	},
+	root: {
+		backgroundColor: "red"
+	}
 }));
 
 function Projects(props) {
@@ -29,19 +32,25 @@ function Projects(props) {
 
 	return (
 		// Render a Thumbnail component
-		<Container>
+		<Container >
 			{/* <h1>Projects</h1> */}
-			<Grid container spacing={2}>
+			<Grid  container spacing={2} >
 				<Grid item xs={12}>
 					<Grid
 						style={{
 							padding: 30,
-							backgroundColor: "",
+							backgroundColor: "transparent",
+							alignContent:"flex-end",
+							display: 'flex',
+							justifyContent: "space-around",
+							alignItems: "flex-start",
 						}}
+						
 						container
 						justify="center"
 						alignItems="center"
 						spacing={2}
+						
 					>
 						<Grid item md={4}>
 							<Thumbnail
