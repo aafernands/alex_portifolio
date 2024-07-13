@@ -1,9 +1,9 @@
 import * as React from "react";
-import { makeStyles } from "@material-ui/styles";
+import { makeStyles } from '@mui/styles';
 import { Container, Grid } from "@mui/material";
 import ContactForm from "../pages/ContactForm";
 import About from "../pages/About"; // Import the Greeting component
-import Projects from "../pages/Projects"; // Import the Greeting component
+import Projects from "./Portfolio"; // Import the Greeting component
 import Greeting from "../components/Greeting"; // Import the Greeting component
 
 const useStyles = makeStyles((theme) => ({}));

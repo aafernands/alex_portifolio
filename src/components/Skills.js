@@ -1,7 +1,7 @@
 import * as React from "react";
 import { List, ListItem, ListItemIcon, ListItemText } from "@mui/material";
 import { CheckCircleOutline } from "@mui/icons-material";
-import { makeStyles } from "@material-ui/styles";
+import { makeStyles } from '@mui/styles';
 import { Typography, Container, Grid } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

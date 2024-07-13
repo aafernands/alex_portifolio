@@ -4,7 +4,7 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import logo from "../images/logo.png";
-import { makeStyles } from "@material-ui/styles";
+import { makeStyles } from '@mui/styles';
 import MenuDrawer from "./MenuDrawer";
 import { Link } from "react-router-dom";
 
@@ -27,7 +27,6 @@ const useStyles = makeStyles(() => ({
 export default function ButtonAppBar() {
   const classes = useStyles();
 
-
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -35,8 +34,6 @@ export default function ButtonAppBar() {
     });
 
   }
-
-
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="fixed" className={classes.appBar}>

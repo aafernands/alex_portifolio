@@ -5,7 +5,7 @@ import "./App.css";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Projects from "./pages/Projects";
+import Portfolio from "./pages/Portfolio";
 import ContactForm from "./pages/ContactForm";
 import AppBar from "./components/AppBar";
 import Footer from "./components/Footer";
@@ -33,7 +33,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route path="/Portfolio" element={<Portfolio />} />
           <Route path="/contactForm" element={<ContactForm />} />
           {/* Add a 404 route if needed */}
           {/* <Route path="*" element={<NotFound />} /> */}

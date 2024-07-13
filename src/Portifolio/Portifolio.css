@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Dynalight&family=Lovers+Quarrel&family=Poppins:wght@600&family=Raleway:wght@300;400&display=swap");
+
+.container {
+	background-color: #000000ea;
+}
+
+.tableDiv {
+	background-color: blue;
+}
+
+#spanTitle {
+	color: #1a237e;
+}
+
+.lead {
+	font-family: "Poppins", sans-serif;
+	color: white;
+	font-size: 12px;
+	font-weight: 100;
+	text-align: center;
+}
