@@ -63,6 +63,8 @@ const ContactForm = () => {
 
   return (
     <Container>
+                <Grid item xs={12}>
+
       <Grid
         id="contact"
         container
@@ -152,6 +154,8 @@ const ContactForm = () => {
           )}
         </Grid>
       </Grid>
+      </Grid>
+
     </Container>
   );
 };
