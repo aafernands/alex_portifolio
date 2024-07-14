@@ -12,15 +12,23 @@ import Greeting from "../components/Greeting";
 const Home = () => {
   return (
     <Container>
-      <Grid container id="home" spacing={3} style={{ padding: "20px" }}>
-        <Grid item xs={12}>
+      <Grid container spacing={3} style={{ padding: "20px" }}>
+        <Grid item xs={12} id="home">
           <Greeting />
         </Grid>
+        <Grid item xs={12} id="about">
+          <About />
+        </Grid>
+        <Grid item xs={12} id="services">
+          <Services />
+        </Grid>
+        <Grid item xs={12} id="projects">
+          <Projects />
+        </Grid>
+        <Grid item xs={12} id="contact">
+          <ContactForm />
+        </Grid>
       </Grid>
-      <About />
-      <Services />
-      <Projects />
-      <ContactForm />
     </Container>
   );
 };

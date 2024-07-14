@@ -4,18 +4,28 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import logo from "../images/logo.png";
-import { makeStyles } from '@mui/styles';
+import { makeStyles } from "@mui/styles";
 import MenuDrawer from "./MenuDrawer";
-import { Link } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
 
 const useStyles = makeStyles(() => ({
   toolbar: {
-    minHeight: "36px",
-    justifyContent: "space-between", // Adjust this for spacing
+    minHeight: "56px", // Increased for better touch support
+    justifyContent: "space-between",
     backgroundColor: "#02182B",
   },
-  img: { height: "30px", marginRight: "10px" },
-  title: { flexGrow: 1, textAlign: "center" },
+  img: {
+    height: "40px", // Increased for better visibility
+    marginRight: "10px",
+  },
+  title: {
+    flexGrow: 1,
+    textAlign: "center",
+    display: "none", // Hidden on small screens
+    "@media (min-width:600px)": {
+      display: "block", // Shown on medium and larger screens
+    },
+  },
   link: {
     display: "flex",
     alignItems: "center",
@@ -30,20 +40,20 @@ export default function ButtonAppBar() {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth", // Optional: Smooth scroll animation
+      behavior: "smooth",
     });
+  };
 
-  }
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="fixed" className={classes.appBar}>
         <Toolbar className={classes.toolbar}>
-        <Link to="/" className={classes.link} onClick={scrollToTop}>
-        <img src={logo} alt="Logo" className={classes.img} />
+          <RouterLink to="/" className={classes.link} onClick={scrollToTop}>
+            <img src={logo} alt="Logo" className={classes.img} />
             <Typography variant="h5" component="div" className={classes.title}>
               F.N.D.S DEV LABS
             </Typography>
-          </Link>
+          </RouterLink>
           <MenuDrawer />
         </Toolbar>
       </AppBar>
