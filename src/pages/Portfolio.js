@@ -1,12 +1,6 @@
 import * as React from "react";
-import { makeStyles } from '@mui/styles';
-import { Typography, Container, Grid } from "@mui/material";
+import { Typography, Grid } from "@mui/material";
 import Projects from "../components/Projects/Projects";
-
-const useStyles = makeStyles((theme) => ({
-
-  
-}));
 
 function Portfolio() {
 
@@ -22,8 +16,7 @@ function Portfolio() {
         component="p"
         gutterBottom
       >
-				HERE YOU CAN HAVE A GLIMPSE OF MY WORK
-		
+Welcome to our Projects page, where we showcase the innovative and impactful work we've accomplished. Each project reflects our commitment to excellence and our passion for technology. Explore our portfolio to see how we've transformed ideas into reality, delivering solutions that drive success and inspire creativity.
       </Typography>
 
       <Projects />

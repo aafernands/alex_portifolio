@@ -46,6 +46,10 @@ const MenuDrawer = () => {
           ABOUT
         </Button>
         <br/>
+        <Button onClick={() => scrollToSection("services", setMobileOpen)}>
+          SERVICES
+        </Button>
+        <br/>
         <Button onClick={() => scrollToSection("projects", setMobileOpen)}>
           PROJECTS
         </Button>
@@ -90,7 +94,7 @@ const MenuDrawer = () => {
       </Hidden>
       <Hidden mdDown>
         <Box sx={{ display: "flex" }}>
-          {["HOME", "ABOUT", "PROJECTS", "CONTACT"].map((text) => (
+          {["HOME", "ABOUT", "SERVICES", "PROJECTS", "CONTACT"].map((text) => (
             <Box key={text} sx={{ mx: 2 }}>
               <ListItem button onClick={() => scrollToSection(text.toLowerCase(), setMobileOpen)}>
                 <ListItemText primary={text} />

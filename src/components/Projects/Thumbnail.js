@@ -11,8 +11,8 @@ import Typography from "@mui/material/Typography";
 
 const useStyles = makeStyles({
   root: {
-    maxWidth:320,
-    backgroundColor: "transparent",
+    maxWidth: 345,
+    backgroundColor: "red",
     // boxShadow: "2.5px 5px 4px #000",
   },
   media: {
@@ -26,7 +26,7 @@ const useStyles = makeStyles({
 	justifyContent: "center"
   },
   cardArea: {
-	backgroundColor: "transparent"
+	backgroundColor: "transparent",
   }
 });
 function Thumbnail(props) {
@@ -34,7 +34,7 @@ function Thumbnail(props) {
   return (
     <Container>
       <Card className={classes.root}>
-        <CardActionArea >
+        <CardActionArea>
           <CardMedia
             className={classes.media}
             image={props.image}
