@@ -21,10 +21,7 @@ const useStyles = makeStyles(() => ({
   title: {
     flexGrow: 1,
     textAlign: "center",
-    display: "none", // Hidden on small screens
-    "@media (min-width:600px)": {
-      display: "block", // Shown on medium and larger screens
-    },
+    display: "block", // Ensuring the title is shown on all screens
   },
   link: {
     display: "flex",

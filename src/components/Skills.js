@@ -16,7 +16,6 @@ import {
 const useStyles = makeStyles((theme) => ({
   list: {
     padding: "20px",
-    backgroundColor: "#f9f9f9",
     borderRadius: "8px",
     fontFamily: "Aldrich, Arial, sans-serif",
   },

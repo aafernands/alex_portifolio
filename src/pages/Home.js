@@ -12,7 +12,7 @@ import Greeting from "../components/Greeting";
 const Home = () => {
   return (
     <Container>
-      <Grid container spacing={3} style={{ padding: "20px" }}>
+      <Grid container spacing={3} style={{ padding: "" }}>
         <Grid item xs={12} id="home">
           <Greeting />
         </Grid>

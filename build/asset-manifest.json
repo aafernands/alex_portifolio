@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e1fb3c5e.css",
-    "main.js": "/static/js/main.da2d4efb.js",
+    "main.js": "/static/js/main.33669434.js",
     "static/js/453.41811d64.chunk.js": "/static/js/453.41811d64.chunk.js",
     "static/media/webDev.jpg": "/static/media/webDev.1138062a3c17a841b671.jpg",
     "static/media/WowRealtor.png": "/static/media/WowRealtor.d76d4a53c11e5cf36e58.png",
@@ -16,11 +16,11 @@
     "static/media/logo.png": "/static/media/logo.d6674f02cccc388ddd71.png",
     "index.html": "/index.html",
     "main.e1fb3c5e.css.map": "/static/css/main.e1fb3c5e.css.map",
-    "main.da2d4efb.js.map": "/static/js/main.da2d4efb.js.map",
+    "main.33669434.js.map": "/static/js/main.33669434.js.map",
     "453.41811d64.chunk.js.map": "/static/js/453.41811d64.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e1fb3c5e.css",
-    "static/js/main.da2d4efb.js"
+    "static/js/main.33669434.js"
   ]
 }
