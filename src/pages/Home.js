@@ -6,6 +6,7 @@ import About from "../pages/About";
 import Projects from "./Portfolio";
 import Services from "./Services";
 import Greeting from "../components/Greeting";
+import ScrollArrow from '../components/ScrollArrow'; // Adjust the path as necessary
 
 // const useStyles = makeStyles((theme) => ({}));
 
@@ -15,6 +16,7 @@ const Home = () => {
       <Grid container spacing={3} style={{ padding: "" }}>
         <Grid item xs={12} id="home">
           <Greeting />
+          <ScrollArrow />
         </Grid>
         <Grid item xs={12} id="about">
           <About />

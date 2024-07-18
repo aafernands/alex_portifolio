@@ -17,11 +17,22 @@ const theme = createTheme({
       textAlign: "center",
       fontFamily: 'Anton, Arial, sans-serif', // Ensure fallback fonts are provided
     },
-    h4: {
-      // fontSize: '1rem',
+    h2: {
+      fontSize: "2rem",
+      color: "black",
       textAlign: "center",
-      fontWeight: "400",
-      padding: "20px",
+      fontFamily: 'Anton, Arial, sans-serif', // Ensure fallback fonts are provided
+    },
+    h3: {
+      fontSize: "1rem",
+      color: "black",
+      textAlign: "center",
+      fontFamily: 'Anton, Arial, sans-serif', // Ensure fallback fonts are provided
+    },
+    h4: {
+      fontSize: "1rem",
+      color: "black",
+      textAlign: "center",
       fontFamily: 'Anton, Arial, sans-serif', // Ensure fallback fonts are provided
     },
     h5: {
@@ -32,13 +43,13 @@ const theme = createTheme({
     },
     h6: {
       fontSize: '1rem',
-      fontWeight: "bold",
+      // fontWeight: "bold",
       color: "#25291C",
       textAlign: "center",
-      fontFamily: 'Anton, Arial, sans-serif', // Ensure fallback fonts are provided
+      fontFamily: 'Questrial, Arial, sans-serif', // Ensure fallback fonts are provided
     },
     p: {
-      color: "#25291C",
+      color: "black",
       textAlign: "left",
       fontFamily: 'Aldrich, Arial, sans-serif', // Ensure fallback fonts are provided
     },
@@ -72,10 +83,10 @@ const theme = createTheme({
           // Add any other custom styles here
         },
         containedPrimary: {
-          backgroundColor: '#EDD500', // Custom background color for primary contained buttons
+          bgcolor: '#EDD500', // Custom background color for primary contained buttons
           color: '#25291C',
           '&:hover': {
-            backgroundColor: '#E6E6EA', // Custom hover color for primary contained buttons
+            bgcolor: '#E6E6EA', // Custom hover color for primary contained buttons
           },
         },
         outlinedSecondary: {

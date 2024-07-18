@@ -15,12 +15,12 @@ const useStyles = makeStyles((theme) => ({
     marging: "20px",
     padding: "20px",
     textAlign: "center",
-    backgroundColor: "",
+    bgcolor: "",
     boxShadow: "2.5px 5px 4px #fff",
     color: "white",
   },
   root: {
-    backgroundColor: "red",
+    bgcolor: "red",
   },
 }));
 
@@ -49,7 +49,7 @@ function Services(props) {
           <Grid
             style={{
               padding: 30,
-              backgroundColor: "transparent",
+              bgcolor: "transparent",
               alignContent: "flex-end",
               display: "flex",
               justifyContent: "space-around",

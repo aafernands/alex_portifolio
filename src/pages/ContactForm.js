@@ -84,7 +84,7 @@ const ContactForm = () => {
               border: "1px solid lightgray",
               borderRadius: "8px",
               boxShadow: 3,
-              backgroundColor: "white",
+              bgcolor: "white",
             }}
           >
             <Typography variant="h4" component="h1" gutterBottom align="center">
@@ -131,7 +131,7 @@ const ContactForm = () => {
               border: "1px solid lightgray",
               borderRadius: "8px",
               boxShadow: 3,
-              backgroundColor: "white",
+              bgcolor: "white",
             }}
               mt={2}
               display="flex"

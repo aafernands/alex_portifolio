@@ -10,7 +10,7 @@ const useStyles = makeStyles(() => ({
     toolbar: {
       minHeight: '36px', // Adjust the height as needed
       justifyContent: 'center', // Center the content horizontally
-      backgroundColor: "#02182B"
+      bgcolor: "#02182B"
     },
   }));
   

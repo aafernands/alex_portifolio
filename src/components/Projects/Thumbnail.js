@@ -12,6 +12,7 @@ import Typography from "@mui/material/Typography";
 const useStyles = makeStyles({
   root: {
     maxWidth: 345,
+    padding: "60px",
     backgroundColor: "red",
     // boxShadow: "2.5px 5px 4px #000",
   },

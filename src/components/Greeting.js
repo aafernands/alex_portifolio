@@ -17,12 +17,12 @@ const Greeting = () => {
         justifyContent: "center",
         alignItems: "center",
         height: "100vh",
-        // backgroundColor: "#f0f0f0",
+        // bgcolor: "#f0f0f0",
       }}
     >
       <Box
         sx={{
-          padding: "20px",
+          // padding: "20px",
           textAlign: "center"
         }}
       >
@@ -38,7 +38,7 @@ const Greeting = () => {
         <br />
         <br />
         <Typography
-          style={{ textAlign: "center", padding: "20px" }}
+          style={{ textAlign: "center"  }}
           variant="p"
           component="p"
           gutterBottom
