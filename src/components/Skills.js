@@ -1,4 +1,3 @@
-
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
@@ -51,6 +50,7 @@ export default function Highlights() {
         pb: { xs: 8, sm: 16 },
         color: 'white',
         bgcolor: '#06090a',
+        
       }}
     >
       <Container

@@ -1,82 +1,105 @@
-import React from "react"; // Import the Component component from React
+import React from "react";
 import { makeStyles } from "@mui/styles";
 import Card from "@mui/material/Card";
 import CardActionArea from "@mui/material/CardActionArea";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
-import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
+import { styled } from '@mui/material/styles';
+import Button from '@mui/material/Button';
+import { yellow } from '@mui/material/colors';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 345,
-    padding: "60px",
-    backgroundColor: "red",
-    // boxShadow: "2.5px 5px 4px #000",
+    padding: "20px",
+    [theme.breakpoints.down('sm')]: {
+      padding: "10px",
+    },
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
+    height: 350, // Adjust as needed for uniform height
+    marginBottom: 20
   },
   media: {
-    height: 200,
-    justifyContent: "center",
+    height: 0,
+    paddingTop: '60%', // Adjust as needed
   },
   button: {
     fontSize: 14,
-    padding: 35,
-	backgroundColor: "transparent",
-	justifyContent: "center"
+    padding: 8,
+    backgroundColor: "transparent",
+    justifyContent: "center",
   },
   cardArea: {
-	backgroundColor: "transparent",
-  }
+    backgroundColor: "transparent",
+  },
+}));
+
+const StyledButton = styled(Button)({
+  boxShadow: 'none',
+  textTransform: 'none',
+  fontSize: 14,
+  padding: '6px 12px',
+  border: '1px solid',
+  lineHeight: 1.5,
+  backgroundColor: yellow[500],
+  borderColor: yellow[500],
+  fontFamily: [
+    '-apple-system',
+    'BlinkMacSystemFont',
+    '"Segoe UI"',
+    'Roboto',
+    '"Helvetica Neue"',
+    'Arial',
+    'sans-serif',
+    '"Apple Color Emoji"',
+    '"Segoe UI Emoji"',
+    '"Segoe UI Symbol"',
+  ].join(','),
+  '&:hover': {
+    backgroundColor: yellow[700],
+    borderColor: yellow[700],
+    boxShadow: 'none',
+  },
 });
+
 function Thumbnail(props) {
   const classes = useStyles();
   return (
-    <Container>
-      <Card className={classes.root}>
-        <CardActionArea>
-          <CardMedia
-            className={classes.media}
-            image={props.image}
-            title="Contemplative Reptile"
-          />
-          <CardContent className={classes.cardArea}>
-            <Typography
-              // style={{ color: "gray" }}
-              gutterBottom
-              variant="h6"
-              component="h2"
-            >
-              {props.title}
-            </Typography>
-            <Typography variant="body2" component="p">
-              {props.description}
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-        <CardActions className={classes.button}>
-          <Button
-            href={props.linkGithub}
-            variant="contained"
-            size="small"
-            color="primary"
-          >
-            View Details
-          </Button>
-
-          {/* <Button
-						variant="contained"
-						href={props.linkLive}
-						size="small"
-						color="primary"
-						style={{ fontSize: 12, padding: 18 }}
-					>
-						Live Demo
-					</Button> */}
-        </CardActions>
-      </Card>
-    </Container>
+    <Card className={classes.root}>
+      <CardActionArea>
+        <CardMedia
+          className={classes.media}
+          image={props.image}
+          title={props.title}
+        />
+        <CardContent className={classes.cardArea}>
+          <Typography gutterBottom variant="h6" component="h2">
+            {props.title}
+          </Typography>
+          <Typography variant="body2" component="p">
+            {props.description}
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions className={classes.button}>
+        <StyledButton
+          href={props.linkGithub}
+          variant="contained"
+          disableRipple
+        >
+          View Details
+        </StyledButton>
+        <StyledButton
+          variant="contained"
+          href={props.linkLive}
+        >
+          Live Demo
+        </StyledButton>
+      </CardActions>
+    </Card>
   );
 }
 
