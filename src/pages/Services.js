@@ -157,7 +157,7 @@ export default function Services() {
       <Grid container spacing={6}>
         <Grid item xs={12} md={6}>
           <Typography
-            style={{ color: "white" }}
+            style={{ color: "#06090A" }}
             id="about"
             variant="h2"
             component="h2"
