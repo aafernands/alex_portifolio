@@ -1,26 +1,22 @@
 {
   "files": {
     "main.css": "/static/css/main.6a94ae01.css",
-    "main.js": "/static/js/main.134edbd0.js",
+    "main.js": "/static/js/main.f840d3b8.js",
     "static/js/453.41811d64.chunk.js": "/static/js/453.41811d64.chunk.js",
-    "static/media/webDev.jpg": "/static/media/webDev.1138062a3c17a841b671.jpg",
     "static/media/WowRealtor.png": "/static/media/WowRealtor.d76d4a53c11e5cf36e58.png",
-    "static/media/ui.jpg": "/static/media/ui.c039da40a95e11945ba9.jpg",
-    "static/media/webDesign.jpg": "/static/media/webDesign.3e90d5f961307384a149.jpg",
     "static/media/Weather.png": "/static/media/Weather.4e799b3b9c2017b2b330.png",
     "static/media/Password.png": "/static/media/Password.b24641e4a585449c707b.png",
     "static/media/Books.png": "/static/media/Books.d010a98f2ab4e6d05f34.png",
     "static/media/Quiz.png": "/static/media/Quiz.3a6ab8dd2525569af061.png",
     "static/media/Scheduler.png": "/static/media/Scheduler.b61fc481deccefef71b0.png",
-    "static/media/seo.jpg": "/static/media/seo.164d88d54f98ad790262.jpg",
     "static/media/logo.png": "/static/media/logo.d6674f02cccc388ddd71.png",
     "index.html": "/index.html",
     "main.6a94ae01.css.map": "/static/css/main.6a94ae01.css.map",
-    "main.134edbd0.js.map": "/static/js/main.134edbd0.js.map",
+    "main.f840d3b8.js.map": "/static/js/main.f840d3b8.js.map",
     "453.41811d64.chunk.js.map": "/static/js/453.41811d64.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6a94ae01.css",
-    "static/js/main.134edbd0.js"
+    "static/js/main.f840d3b8.js"
   ]
 }
