@@ -101,44 +101,43 @@
 
 // export default Services;
 
-
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Card from '@mui/material/Card';
-import Chip from '@mui/material/Chip';
-import Container from '@mui/material/Container';
-import Grid from '@mui/material/Grid';
-import Link from '@mui/material/Link';
-import Stack from '@mui/material/Stack';
-import Typography from '@mui/material/Typography';
-import ChevronRightRoundedIcon from '@mui/icons-material/ChevronRightRounded';
-import WebRoundedIcon from '@mui/icons-material/WebRounded';
-import CodeRoundedIcon from '@mui/icons-material/CodeRounded';
-import BuildRoundedIcon from '@mui/icons-material/BuildRounded';
+import * as React from "react";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Card from "@mui/material/Card";
+import Chip from "@mui/material/Chip";
+import Container from "@mui/material/Container";
+import Grid from "@mui/material/Grid";
+import Link from "@mui/material/Link";
+import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
+import ChevronRightRoundedIcon from "@mui/icons-material/ChevronRightRounded";
+import WebRoundedIcon from "@mui/icons-material/WebRounded";
+import CodeRoundedIcon from "@mui/icons-material/CodeRounded";
+import BuildRoundedIcon from "@mui/icons-material/BuildRounded";
 
 const services = [
   {
     icon: <WebRoundedIcon />,
-    title: 'Web Development',
+    title: "Web Development",
     description:
-      'We offer responsive and interactive web development services using the latest technologies.',
+      "We offer responsive and interactive web development services using the latest technologies.",
     imageLight: 'url("/path/to/your/light-image-web.png")',
     imageDark: 'url("/path/to/your/dark-image-web.png")',
   },
   {
     icon: <CodeRoundedIcon />,
-    title: 'App Development',
+    title: "App Development",
     description:
-      'Our team can develop mobile and desktop applications tailored to your needs.',
+      "Our team can develop mobile and desktop applications tailored to your needs.",
     imageLight: 'url("/path/to/your/light-image-app.png")',
     imageDark: 'url("/path/to/your/dark-image-app.png")',
   },
   {
     icon: <BuildRoundedIcon />,
-    title: 'Maintenance & Support',
+    title: "Maintenance & Support",
     description:
-      'We provide ongoing maintenance and support to ensure your products are always up to date.',
+      "We provide ongoing maintenance and support to ensure your products are always up to date.",
     imageLight: 'url("/path/to/your/light-image-maintenance.png")',
     imageDark: 'url("/path/to/your/dark-image-maintenance.png")',
   },
@@ -157,7 +156,13 @@ export default function Services() {
     <Container id="services" sx={{ py: { xs: 8, sm: 16 } }}>
       <Grid container spacing={6}>
         <Grid item xs={12} md={6}>
-          <Typography component="h2" variant="h4" color="text.primary">
+          <Typography
+            style={{ color: "white" }}
+            id="about"
+            variant="h2"
+            component="h2"
+            gutterBottom
+          >
             Our Services
           </Typography>
           <Typography
@@ -167,7 +172,12 @@ export default function Services() {
           >
             Explore the various services we offer to help your business succeed.
           </Typography>
-          <Grid container item gap={1} sx={{ display: { xs: 'auto', sm: 'none' } }}>
+          <Grid
+            container
+            item
+            gap={1}
+            sx={{ display: { xs: "auto", sm: "none" } }}
+          >
             {services.map(({ title }, index) => (
               <Chip
                 key={index}
@@ -175,20 +185,25 @@ export default function Services() {
                 onClick={() => handleServiceClick(index)}
                 sx={{
                   borderColor: (theme) => {
-                    if (theme.palette.mode === 'light') {
-                      return selectedServiceIndex === index ? 'primary.light' : '';
+                    if (theme.palette.mode === "light") {
+                      return selectedServiceIndex === index
+                        ? "primary.light"
+                        : "";
                     }
-                    return selectedServiceIndex === index ? 'primary.light' : '';
+                    return selectedServiceIndex === index
+                      ? "primary.light"
+                      : "";
                   },
                   background: (theme) => {
-                    if (theme.palette.mode === 'light') {
-                      return selectedServiceIndex === index ? 'none' : '';
+                    if (theme.palette.mode === "light") {
+                      return selectedServiceIndex === index ? "none" : "";
                     }
-                    return selectedServiceIndex === index ? 'none' : '';
+                    return selectedServiceIndex === index ? "none" : "";
                   },
-                  backgroundColor: selectedServiceIndex === index ? 'primary.main' : '',
-                  '& .MuiChip-label': {
-                    color: selectedServiceIndex === index ? '#fff' : '',
+                  backgroundColor:
+                    selectedServiceIndex === index ? "primary.main" : "",
+                  "& .MuiChip-label": {
+                    color: selectedServiceIndex === index ? "#fff" : "",
                   },
                 }}
               />
@@ -198,26 +213,34 @@ export default function Services() {
             component={Card}
             variant="outlined"
             sx={{
-              display: { xs: 'auto', sm: 'none' },
+              display: { xs: "auto", sm: "none" },
               mt: 4,
             }}
           >
             <Box
               sx={{
                 backgroundImage: (theme) =>
-                  theme.palette.mode === 'light'
+                  theme.palette.mode === "light"
                     ? services[selectedServiceIndex].imageLight
                     : services[selectedServiceIndex].imageDark,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
+                backgroundSize: "cover",
+                backgroundPosition: "center",
                 minHeight: 280,
               }}
             />
             <Box sx={{ px: 2, pb: 2 }}>
-              <Typography color="text.primary" variant="body2" fontWeight="bold">
+              <Typography
+                color="text.primary"
+                variant="body2"
+                fontWeight="bold"
+              >
                 {selectedService.title}
               </Typography>
-              <Typography color="text.secondary" variant="body2" sx={{ my: 0.5 }}>
+              <Typography
+                color="text.secondary"
+                variant="body2"
+                sx={{ my: 0.5 }}
+              >
                 {selectedService.description}
               </Typography>
               <Link
@@ -225,16 +248,16 @@ export default function Services() {
                 variant="body2"
                 fontWeight="bold"
                 sx={{
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  '& > svg': { transition: '0.2s' },
-                  '&:hover > svg': { transform: 'translateX(2px)' },
+                  display: "inline-flex",
+                  alignItems: "center",
+                  "& > svg": { transition: "0.2s" },
+                  "&:hover > svg": { transform: "translateX(2px)" },
                 }}
               >
                 <span>Learn more</span>
                 <ChevronRightRoundedIcon
                   fontSize="small"
-                  sx={{ mt: '1px', ml: '2px' }}
+                  sx={{ mt: "1px", ml: "2px" }}
                 />
               </Link>
             </Box>
@@ -245,7 +268,7 @@ export default function Services() {
             alignItems="flex-start"
             spacing={2}
             useFlexGap
-            sx={{ width: '100%', display: { xs: 'none', sm: 'flex' } }}
+            sx={{ width: "100%", display: { xs: "none", sm: "flex" } }}
           >
             {services.map(({ icon, title, description }, index) => (
               <Card
@@ -255,48 +278,52 @@ export default function Services() {
                 onClick={() => handleServiceClick(index)}
                 sx={{
                   p: 3,
-                  height: 'fit-content',
-                  width: '100%',
-                  background: 'none',
+                  height: "fit-content",
+                  width: "100%",
+                  background: "none",
                   backgroundColor:
-                    selectedServiceIndex === index ? 'action.selected' : undefined,
+                    selectedServiceIndex === index
+                      ? "action.selected"
+                      : undefined,
                   borderColor: (theme) => {
-                    if (theme.palette.mode === 'light') {
+                    if (theme.palette.mode === "light") {
                       return selectedServiceIndex === index
-                        ? 'primary.light'
-                        : 'grey.200';
+                        ? "primary.light"
+                        : "grey.200";
                     }
-                    return selectedServiceIndex === index ? 'primary.dark' : 'grey.800';
+                    return selectedServiceIndex === index
+                      ? "primary.dark"
+                      : "grey.800";
                   },
                 }}
               >
                 <Box
                   sx={{
-                    width: '100%',
-                    display: 'flex',
-                    textAlign: 'left',
-                    flexDirection: { xs: 'column', md: 'row' },
-                    alignItems: { md: 'center' },
+                    width: "100%",
+                    display: "flex",
+                    textAlign: "left",
+                    flexDirection: { xs: "column", md: "row" },
+                    alignItems: { md: "center" },
                     gap: 2.5,
                   }}
                 >
                   <Box
                     sx={{
                       color: (theme) => {
-                        if (theme.palette.mode === 'light') {
+                        if (theme.palette.mode === "light") {
                           return selectedServiceIndex === index
-                            ? 'primary.main'
-                            : 'grey.300';
+                            ? "primary.main"
+                            : "grey.300";
                         }
                         return selectedServiceIndex === index
-                          ? 'primary.main'
-                          : 'grey.700';
+                          ? "primary.main"
+                          : "grey.700";
                       },
                     }}
                   >
                     {icon}
                   </Box>
-                  <Box sx={{ textTransform: 'none' }}>
+                  <Box sx={{ textTransform: "none" }}>
                     <Typography
                       color="text.primary"
                       variant="body2"
@@ -316,10 +343,10 @@ export default function Services() {
                       variant="body2"
                       fontWeight="bold"
                       sx={{
-                        display: 'inline-flex',
-                        alignItems: 'center',
-                        '& > svg': { transition: '0.2s' },
-                        '&:hover > svg': { transform: 'translateX(2px)' },
+                        display: "inline-flex",
+                        alignItems: "center",
+                        "& > svg": { transition: "0.2s" },
+                        "&:hover > svg": { transform: "translateX(2px)" },
                       }}
                       onClick={(event) => {
                         event.stopPropagation();
@@ -328,7 +355,7 @@ export default function Services() {
                       <span>Learn more</span>
                       <ChevronRightRoundedIcon
                         fontSize="small"
-                        sx={{ mt: '1px', ml: '2px' }}
+                        sx={{ mt: "1px", ml: "2px" }}
                       />
                     </Link>
                   </Box>
@@ -341,25 +368,25 @@ export default function Services() {
           item
           xs={12}
           md={6}
-          sx={{ display: { xs: 'none', sm: 'flex' }, width: '100%' }}
+          sx={{ display: { xs: "none", sm: "flex" }, width: "100%" }}
         >
           <Card
             variant="outlined"
             sx={{
-              height: '100%',
-              width: '100%',
-              display: { xs: 'none', sm: 'flex' },
-              pointerEvents: 'none',
+              height: "100%",
+              width: "100%",
+              display: { xs: "none", sm: "flex" },
+              pointerEvents: "none",
             }}
           >
             <Box
               sx={{
-                m: 'auto',
+                m: "auto",
                 width: 420,
                 height: 500,
-                backgroundSize: 'contain',
+                backgroundSize: "contain",
                 backgroundImage: (theme) =>
-                  theme.palette.mode === 'light'
+                  theme.palette.mode === "light"
                     ? services[selectedServiceIndex].imageLight
                     : services[selectedServiceIndex].imageDark,
               }}
@@ -370,4 +397,3 @@ export default function Services() {
     </Container>
   );
 }
-
