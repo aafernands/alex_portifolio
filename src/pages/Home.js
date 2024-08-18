@@ -6,7 +6,7 @@ import About from "../pages/About";
 import Projects from "./Portfolio";
 import Services from "./Services";
 import Greeting from "../components/Greeting";
-import ScrollArrow from '../components/ScrollArrow'; // Adjust the path as necessary
+import ScrollArrow from "../components/ScrollArrow"; // Adjust the path as necessary
 
 // const useStyles = makeStyles((theme) => ({}));
 
@@ -18,7 +18,15 @@ const Home = () => {
           <Greeting />
           <ScrollArrow />
         </Grid>
-        <Grid item xs={12} id="about">
+        <Grid
+          item
+          xs={12}
+          sx={{
+            color: "white",
+            bgcolor: "#06090a",
+          }}
+          id="about"
+        >
           <About />
         </Grid>
         <Grid item xs={12} id="services">

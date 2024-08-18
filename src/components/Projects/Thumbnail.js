@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
-    height: 350, // Adjust as needed for uniform height
+    height: 400, // Adjust as needed for uniform height
     marginBottom: 20
   },
   media: {

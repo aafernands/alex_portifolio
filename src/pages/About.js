@@ -4,15 +4,26 @@ import Skills from "../components/Skills";
 
 const About = () => {
   return (
-    <Container>
+    <Container
+      sx={{
+        color: "white",
+        bgcolor: "#06090a",
+      }}
+    >
       <Grid item xs={12} style={{ textAlign: "center" }}>
-        <Typography id="about" variant="h2" component="h2" gutterBottom>
+        <Typography
+          style={{ color: "white" }}
+          id="about"
+          variant="h2"
+          component="h2"
+          gutterBottom
+        >
           ABOUT{" "}
         </Typography>
         <br />
 
         <Typography
-          style={{ textAlign: "center" }}
+          style={{ color: "#bdbdbd", textAlign: "center" }}
           variant="p"
           component="p"
           gutterBottom
