@@ -48,9 +48,10 @@ const Greeting = () => {
           carefully crafted code and user-centric design.
         </Typography>
         <br />
-        <Button  onClick={scrollToProjects} variant="contained" color="primary">
+        <Button  onClick={scrollToProjects} variant="contained" color="secondary">
           PROJECTS
         </Button>
+        
       </Box>
     </Container>
   );

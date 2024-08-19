@@ -63,99 +63,110 @@ const ContactForm = () => {
 
   return (
     <Container>
-                <Grid item xs={12}>
-
-      <Grid
-        id="contact"
-        container
-        justifyContent="center"
-        alignItems="center"
-        style={{ minHeight: "100vh" }}
-      >
-        <Grid item xs={12} md={8} lg={6}>
-          <Box
-            component="form"
-            onSubmit={handleSubmit}
-            sx={{
-              display: showForm ? "flex" : "none", // Conditional display
-              flexDirection: "column",
-              gap: 2,
-              padding: "20px",
-              border: "1px solid lightgray",
-              borderRadius: "8px",
-              boxShadow: 3,
-              bgcolor: "white",
-            }}
-          >
-            <Typography variant="h4" component="h1" gutterBottom align="center">
-              CONTACT ME
-            </Typography>
-            <TextField
-              name="name"
-              label="Name"
-              variant="outlined"
-              fullWidth
-              required
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-            />
-            <TextField
-              name="email"
-              label="Email"
-              variant="outlined"
-              fullWidth
-              required
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-            <TextField
-              name="message"
-              label="Message"
-              variant="outlined"
-              fullWidth
-              required
-              multiline
-              rows={4}
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-            />
-            <Button variant="contained" color="primary" type="submit" fullWidth>
-              Send
-            </Button>
-          </Box>
-          {formSubmitted && (
+      <Grid item xs={12}>
+        <Grid
+          id="contact"
+          container
+          justifyContent="center"
+          alignItems="center"
+          style={{ minHeight: "100vh" }}
+        >
+          <Grid item xs={12} md={8} lg={6}>
             <Box
-            sx={{
-              
-              padding: "20px",
-              border: "1px solid lightgray",
-              borderRadius: "8px",
-              boxShadow: 3,
-              bgcolor: "white",
-            }}
-              mt={2}
-              display="flex"
-              flexDirection="column"
-              alignItems="center"
+              component="form"
+              onSubmit={handleSubmit}
+              sx={{
+                display: showForm ? "flex" : "none", // Conditional display
+                flexDirection: "column",
+                gap: 2,
+                padding: "20px",
+                border: "1px solid lightgray",
+                borderRadius: "8px",
+                boxShadow: 3,
+                bgcolor: "white",
+              }}
             >
+              <br />
+
               <Typography
-                style={{ color: "green" }}
-                variant="h5"
+                style={{ color: "#06090A" }}
+                variant="h2"
                 component="h2"
                 gutterBottom
-                align="center"
               >
-                Thank you for your message!
+                CONTACT ME
               </Typography>
-              <Typography variant="body1" align="center">
-                You will be redirected in {countdown} seconds...
-              </Typography>
+              <br />
+
+              <TextField
+                name="name"
+                label="Name"
+                variant="outlined"
+                fullWidth
+                required
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
+              <TextField
+                name="email"
+                label="Email"
+                variant="outlined"
+                fullWidth
+                required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <TextField
+                name="message"
+                label="Message"
+                variant="outlined"
+                fullWidth
+                required
+                multiline
+                rows={4}
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+              />
+              <Button
+                variant="contained"
+                color="primary"
+                type="submit"
+                fullWidth
+              >
+                Send
+              </Button>
             </Box>
-          )}
+            {formSubmitted && (
+              <Box
+                sx={{
+                  padding: "20px",
+                  border: "1px solid lightgray",
+                  borderRadius: "8px",
+                  boxShadow: 3,
+                  bgcolor: "white",
+                }}
+                mt={2}
+                display="flex"
+                flexDirection="column"
+                alignItems="center"
+              >
+                <Typography
+                  style={{ color: "green" }}
+                  variant="h5"
+                  component="h2"
+                  gutterBottom
+                  align="center"
+                >
+                  Thank you for your message!
+                </Typography>
+                <Typography variant="body1" align="center">
+                  You will be redirected in {countdown} seconds...
+                </Typography>
+              </Box>
+            )}
+          </Grid>
         </Grid>
       </Grid>
-      </Grid>
-
     </Container>
   );
 };

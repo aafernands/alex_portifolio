@@ -21,7 +21,8 @@ const About = () => {
           ABOUT{" "}
         </Typography>
         <br />
-
+        <hr />
+        <br />
         <Typography
           style={{ color: "#bdbdbd", textAlign: "center" }}
           variant="p"

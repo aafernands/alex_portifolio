@@ -60,7 +60,7 @@ const theme = createTheme({
 
     },
     button: {
-     color: "red" 
+     color: "rgb(255,235,59)" 
     }
   },
   palette: {
@@ -68,7 +68,7 @@ const theme = createTheme({
       main: '#1976d2', // Custom primary color
     },
     secondary: {
-      main: '#dc004e', // Custom secondary color
+      main: '#FFEB3B', // Custom secondary color
     },
   },
   components: {

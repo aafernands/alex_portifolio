@@ -165,6 +165,9 @@ export default function Services() {
           >
             Our Services
           </Typography>
+          <br />
+      <hr />
+      <br />
           <Typography
             variant="body1"
             color="text.secondary"
