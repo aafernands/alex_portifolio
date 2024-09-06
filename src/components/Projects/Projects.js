@@ -62,7 +62,7 @@ function Projects(props) {
             description="Organize your daily tasks with this work day scheduller app. Save the notes and on specific time."
           />
         </Grid>
-        <Grid item xs={12} sm={6} md={4} className={classes.gridItem}>
+        {/* <Grid item xs={12} sm={6} md={4} className={classes.gridItem}>
           <Thumbnail
             linkLive="https://wow-realtor-app.herokuapp.com/"
             linkGithub="https://github.com/aafernands/RealtorApp"
@@ -70,7 +70,7 @@ function Projects(props) {
             title="Wow Realtor App"
             description="Search for properties and save them on your favorites lists and more."
           />
-        </Grid>
+        </Grid> */}
         <Grid item xs={12} sm={6} md={4} className={classes.gridItem}>
           <Thumbnail
             linkLive="https://alex-books-search-app.herokuapp.com/"
