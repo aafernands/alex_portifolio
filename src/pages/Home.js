@@ -12,11 +12,13 @@ import ScrollArrow from "../components/ScrollArrow"; // Adjust the path as neces
 
 const Home = () => {
   return (
-    <Container  sx={{
-      color: "white",
-      width: "100%"
-    }} >
-      <Grid container spacing={3} style={{ margin: "0px" }}>
+    <Container
+      sx={{
+        color: "white",
+        width: "100%",
+      }}
+    >
+      <Grid container spacing={3} style={{ marginLeft: "0px" }}>
         <Grid item xs={12} id="home">
           <Greeting />
           <ScrollArrow />
@@ -27,7 +29,7 @@ const Home = () => {
           sx={{
             color: "white",
             bgcolor: "#06090a",
-            width: "100%"
+            width: "100%",
           }}
           id="about"
         >

@@ -48,7 +48,7 @@ const MenuDrawer = () => {
   const drawer = (
     <div className={classes.drawer}>
       <List className={classes.list}>
-        {["home", "about", "services", "projects", "contact"].map(
+        {["home", "about", "projects", "contact"].map(
           (sectionId) => (
             <ScrollLink
               key={sectionId}
@@ -103,7 +103,7 @@ const MenuDrawer = () => {
       </Hidden>
       <Hidden mdDown>
         <Box sx={{ display: "flex" }}>
-          {["home", "about", "services", "projects", "contact"].map(
+          {["home", "about", "projects", "contact"].map(
             (sectionId) => (
               <Box key={sectionId} sx={{ mx: 2 }}>
                 <ScrollLink
