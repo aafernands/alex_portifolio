@@ -23,11 +23,12 @@ function Portfolio() {
         component="p"
         gutterBottom
       >
-        Welcome to our Projects page, where we showcase the innovative and
-        impactful work we've accomplished. Each project reflects our commitment
-        to excellence and our passion for technology. Explore our portfolio to
-        see how we've transformed ideas into reality, delivering solutions that
-        drive success and inspire creativity.
+        Take a look at the projects I've worked on—each one is a reflection of
+        my dedication to turning ideas into something real and meaningful. From
+        concept to completion, I've put my heart into crafting solutions that
+        not only solve problems but also spark creativity and drive success.
+        This version is warmer, more conversational, and fits better with the
+        flow of an SPA. Let me know what you think!
       </Typography>
       <Projects />
     </Grid>
