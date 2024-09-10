@@ -8,7 +8,7 @@ import {
   Typography,
 } from "@mui/material";
 
-const ContactForm = () => {
+const Contact = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [countdown, setCountdown] = useState(3); // Change countdown to 3 seconds
   const [showForm, setShowForm] = useState(true); // Manage form visibility
@@ -236,4 +236,4 @@ const ContactForm = () => {
   );
 };
 
-export default ContactForm;
+export default Contact;

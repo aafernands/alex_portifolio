@@ -8,7 +8,7 @@ const About = () => {
   return (
     <Container
       sx={{
-        color: "red",
+        color: "white",
         bgcolor: "#06090a",
         margin: "0px",
       }}
@@ -21,6 +21,7 @@ const About = () => {
           component="h2"
           gutterBottom
         >
+          <br />
           ABOUT{" "}
         </Typography>
         <br />

@@ -4,7 +4,6 @@ import password from "./Password.png"; // Import the images
 import quiz from "./Quiz.png"; 
 import weather from "./Weather.png"; 
 import scheduler from "./Scheduler.png"; 
-import WowRealtor from "./WowRealtor.png"; 
 import books from "./Books.png"; 
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
@@ -62,15 +61,6 @@ function Projects(props) {
             description="Organize your daily tasks with this work day scheduller app. Save the notes and on specific time."
           />
         </Grid>
-        {/* <Grid item xs={12} sm={6} md={4} className={classes.gridItem}>
-          <Thumbnail
-            linkLive="https://wow-realtor-app.herokuapp.com/"
-            linkGithub="https://github.com/aafernands/RealtorApp"
-            image={WowRealtor}
-            title="Wow Realtor App"
-            description="Search for properties and save them on your favorites lists and more."
-          />
-        </Grid> */}
         <Grid item xs={12} sm={6} md={4} className={classes.gridItem}>
           <Thumbnail
             linkLive="https://alex-books-search-app.herokuapp.com/"

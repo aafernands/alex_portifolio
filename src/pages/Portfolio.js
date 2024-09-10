@@ -12,17 +12,19 @@ function Portfolio() {
           component="h2"
           gutterBottom
         >
+                    <br />
+
         PROJECTS{" "}
       </Typography>
       <br />
       <hr />
       <br />
       <Typography
-        className="questrial-regular"
-        variant="p"
-        component="p"
-        gutterBottom
-      >
+          style={{ color: "#bdbdbd", textAlign: "center" }}
+          variant="p"
+          component="p"
+          gutterBottom
+        >
         Take a look at the projects I've worked on—each one is a reflection of
         my dedication to turning ideas into something real and meaningful. From
         concept to completion, I've put my heart into crafting solutions that
