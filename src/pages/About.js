@@ -2,14 +2,15 @@ import * as React from "react";
 import { Typography, Container, Grid } from "@mui/material";
 import Skills from "../components/Skills";
 import "./styles.css";
+import Box from "@mui/material/Box";
 
 const About = () => {
   return (
     <Container
       sx={{
-        color: "white",
-        // bgcolor: "red",
-        // margin: "0px",
+        color: "red",
+        bgcolor: "#06090a",
+        margin: "0px",
       }}
     >
       <Grid item xs={12} style={{ textAlign: "center" }}>

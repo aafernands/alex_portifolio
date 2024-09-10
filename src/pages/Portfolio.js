@@ -5,13 +5,13 @@ import Projects from "../components/Projects/Projects";
 function Portfolio() {
   return (
     <Grid item xs={12}>
-      <Typography
-        id="projects"
-        style={{ color: "#06090A" }}
-        variant="h2"
-        component="h2"
-        gutterBottom
-      >
+     <Typography
+          style={{ color: "white" }}
+          id="about"
+          variant="h2"
+          component="h2"
+          gutterBottom
+        >
         PROJECTS{" "}
       </Typography>
       <br />
