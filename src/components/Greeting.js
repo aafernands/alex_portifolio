@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Button, Container, Typography } from "@mui/material";
+import "./styles.css"
 
 const Greeting = () => {
   const scrollToProjects = () => {
@@ -27,11 +28,16 @@ const Greeting = () => {
         }}
       >
         <Typography
+        
           color="#25291C"
           variant="h1"
           component="div"
-          sx={{ flexGrow: 1 }}
-        >
+          sx={{ 
+            flexGrow: 1,
+            background: "linear-gradient(40deg, #ea00ff, #ea00ff, #03d5ff, #03d5ff)",
+            WebkitBackgroundClip: "text", // For making the gradient visible in text
+            WebkitTextFillColor: "transparent" // Makes the text transparent so gradient shows through
+          }}        >
           HI THERE! I'M ALEX FERNANDES
         </Typography>
         <br />
@@ -42,6 +48,9 @@ const Greeting = () => {
           variant="p"
           component="p"
           gutterBottom
+          sx={{ 
+            color: "#8964b0"
+          }}
         >
           I'm a Web Developer student based in New Jersey, United States. I
           strive to build immersive and beautiful web applications through

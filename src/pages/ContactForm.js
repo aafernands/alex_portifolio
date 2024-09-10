@@ -79,17 +79,19 @@ const ContactForm = () => {
                 display: showForm ? "flex" : "none", // Conditional display
                 flexDirection: "column",
                 gap: 2,
+                color: "white",
                 padding: "20px",
-                border: "1px solid lightgray",
                 borderRadius: "8px",
                 boxShadow: 3,
-                bgcolor: "white",
+                bgcolor: "#140524",
               }}
             >
               <br />
 
               <Typography
-                style={{ color: "#06090A" }}
+                sx={{
+                  color: "white", // Change to white
+                }}
                 variant="h2"
                 component="h2"
                 gutterBottom
@@ -106,6 +108,26 @@ const ContactForm = () => {
                 required
                 value={name}
                 onChange={(e) => setName(e.target.value)}
+                InputProps={{
+                  style: { color: "white" }, // Input text color
+                  classes: {
+                    notchedOutline: "MuiOutlinedInput-notchedOutline",
+                  },
+                  sx: {
+                    "& .MuiOutlinedInput-notchedOutline": {
+                      borderColor: "white", // Set border to white
+                    },
+                    "&:hover .MuiOutlinedInput-notchedOutline": {
+                      borderColor: "white", // White border on hover
+                    },
+                    "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+                      borderColor: "white", // White border when focused
+                    },
+                  },
+                }}
+                InputLabelProps={{
+                  style: { color: "white" }, // Label text color
+                }}
               />
               <TextField
                 name="email"
@@ -115,6 +137,26 @@ const ContactForm = () => {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+                InputProps={{
+                  style: { color: "white" }, // Input text color
+                  classes: {
+                    notchedOutline: "MuiOutlinedInput-notchedOutline",
+                  },
+                  sx: {
+                    "& .MuiOutlinedInput-notchedOutline": {
+                      borderColor: "white", // Set border to white
+                    },
+                    "&:hover .MuiOutlinedInput-notchedOutline": {
+                      borderColor: "white", // White border on hover
+                    },
+                    "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+                      borderColor: "white", // White border when focused
+                    },
+                  },
+                }}
+                InputLabelProps={{
+                  style: { color: "white" }, // Label text color
+                }}
               />
               <TextField
                 name="message"
@@ -126,10 +168,33 @@ const ContactForm = () => {
                 rows={4}
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
+                InputProps={{
+                  style: { color: "white" }, // Input text color
+                  classes: {
+                    notchedOutline: "MuiOutlinedInput-notchedOutline",
+                  },
+                  sx: {
+                    "& .MuiOutlinedInput-notchedOutline": {
+                      borderColor: "white", // Set border to white
+                    },
+                    "&:hover .MuiOutlinedInput-notchedOutline": {
+                      borderColor: "white", // White border on hover
+                    },
+                    "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+                      borderColor: "white", // White border when focused
+                    },
+                  },
+                }}
+                InputLabelProps={{
+                  style: { color: "white" }, // Label text color
+                }}
               />
               <Button
                 variant="contained"
-                color="primary"
+                sx={{
+                  bgcolor: "#8964b0", // Custom button background color
+                  color: "white", // Text color white
+                }}
                 type="submit"
                 fullWidth
               >
