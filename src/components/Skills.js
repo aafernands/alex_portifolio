@@ -53,7 +53,7 @@ export default function Highlights() {
         pt: { xs: 4, sm: 12 },
         pb: { xs: 8, sm: 16 },
         color: "white",
-        bgcolor: "#06090a",
+        bgcolor: "#140524",
       }}
     >
       <Container

@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
   },
   gridItem: {
     padding: theme.spacing(2),
+
   },
 }));
 

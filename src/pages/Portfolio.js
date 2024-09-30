@@ -7,7 +7,7 @@ function Portfolio() {
     <Grid item xs={12}>
      <Typography
           style={{ color: "white" }}
-          id="about"
+          id="projects"
           variant="h2"
           component="h2"
           gutterBottom

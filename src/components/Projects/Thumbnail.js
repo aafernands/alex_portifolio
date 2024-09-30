@@ -9,6 +9,7 @@ import Typography from "@mui/material/Typography";
 import { styled } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 import { yellow } from '@mui/material/colors';
+import Skeleton from '@mui/material/Skeleton';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -16,15 +17,18 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('sm')]: {
       padding: "10px",
     },
+
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
     height: 400, // Adjust as needed for uniform height
-    marginBottom: 20
+    marginBottom: 20,
   },
   media: {
     height: 0,
     paddingTop: '60%', // Adjust as needed
+    backgroundColor: "#140524",
+
   },
   button: {
     fontSize: 14,
@@ -33,7 +37,8 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
   },
   cardArea: {
-    backgroundColor: "transparent",
+    backgroundColor: "#140524",
+    color: "white"
   },
 }));
 
@@ -64,6 +69,8 @@ const StyledButton = styled(Button)({
     boxShadow: 'none',
   },
 });
+
+
 
 function Thumbnail(props) {
   const classes = useStyles();

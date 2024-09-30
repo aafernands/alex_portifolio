@@ -9,7 +9,7 @@ const About = () => {
     <Container
       sx={{
         color: "white",
-        bgcolor: "#06090a",
+        bgcolor: "#140524",
         margin: "0px",
       }}
     >
@@ -22,7 +22,7 @@ const About = () => {
           gutterBottom
         >
           <br />
-          ABOUT{" "}
+          ABOUT ME{" "}
         </Typography>
         <br />
         <hr />
