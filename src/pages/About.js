@@ -33,15 +33,13 @@ const About = () => {
           component="p"
           gutterBottom
         >
-          I am a front-end web developer based in New Jersey, specializing in
-          creating responsive, user-friendly websites. With experience as a
-          freelancer, I've worked on a range of projects, helping businesses
-          build and enhance their online presence. My expertise lies in HTML5,
-          CSS3, JavaScript, and modern frameworks like React.js. I focus on
-          delivering clean, efficient code and visually appealing designs. I am
-          dedicated to creating intuitive user experiences and continuously
-          refining my skills to stay current with the latest trends in web
-          development.
+          I am a front-end web developer from New Jersey, dedicated to building
+          responsive and user-friendly websites. With experience as a
+          freelancer, I’ve worked on various projects, helping businesses
+          establish and enhance their online presence. My focus is on writing
+          clean, efficient code and delivering visually engaging, intuitive
+          designs, while continuously staying updated with the latest trends in
+          web development.
         </Typography>
       </Grid>
       <Skills />

@@ -22,7 +22,7 @@ export default function Footer() {
       <Toolbar className={classes.toolbar}>
         <Container maxWidth="sm">
           <Typography variant="body2" color="inherit">
-            &copy; {new Date().getFullYear()} ALEX FERNANDES DEV. All rights reserved.
+            &copy; {new Date().getFullYear()} FNDS Labs. All rights reserved.
           </Typography>
         </Container>
       </Toolbar>

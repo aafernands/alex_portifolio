@@ -48,7 +48,7 @@ export default function ButtonAppBar() {
           <RouterLink to="/" className={classes.link} onClick={scrollToTop}>
             <img src={logo} alt="Logo" className={classes.img} />
             <Typography variant="h5" component="div" className={classes.title}>
-              Alex Fernandes Dev
+              FNDS Labs
             </Typography>
           </RouterLink>
           <MenuDrawer />

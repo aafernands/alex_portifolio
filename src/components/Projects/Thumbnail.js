@@ -9,7 +9,7 @@ import Typography from "@mui/material/Typography";
 import { styled } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 import { yellow } from '@mui/material/colors';
-import Skeleton from '@mui/material/Skeleton';
+// import Skeleton from '@mui/material/Skeleton';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
   media: {
     height: 0,
     paddingTop: '60%', // Adjust as needed
-    backgroundColor: "#140524",
+    backgroundColor: "white",
 
   },
   button: {
@@ -37,8 +37,8 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
   },
   cardArea: {
-    backgroundColor: "#140524",
-    color: "white"
+    backgroundColor: "white",
+    color: "gray"
   },
 }));
 
