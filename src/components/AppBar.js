@@ -7,6 +7,7 @@ import logo from "../images/logo.png";
 import { makeStyles } from "@mui/styles";
 import MenuDrawer from "./MenuDrawer";
 import { Link as RouterLink } from "react-router-dom";
+import Button from "@mui/material/Button";
 
 const useStyles = makeStyles(() => ({
   toolbar: {
@@ -48,10 +49,19 @@ export default function ButtonAppBar() {
           <RouterLink to="/" className={classes.link} onClick={scrollToTop}>
             <img src={logo} alt="Logo" className={classes.img} />
             <Typography variant="h5" component="div" className={classes.title}>
-              FNDS Labs
+              Alex Fernandes
             </Typography>
           </RouterLink>
-          <MenuDrawer />
+          <MenuDrawer />{" "}
+          <a
+            href="/resume.pdf"
+            download="Alex_Fernandes_Resume.pdf"
+            style={{ textDecoration: "none" }}
+          >
+            <Button variant="contained" color="secondary">
+              RESUME
+            </Button>
+          </a>
         </Toolbar>
       </AppBar>
     </Box>
