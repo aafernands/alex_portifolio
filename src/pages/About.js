@@ -7,11 +7,7 @@ import Box from "@mui/material/Box";
 const About = () => {
   return (
     <Container
-      sx={{
-        color: "white",
-        bgcolor: "#140524",
-        margin: "0px",
-      }}
+      
     >
       <Grid item xs={12} style={{ textAlign: "center" }}>
         <Typography
