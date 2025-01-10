@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.0b34ea3d.css",
-    "main.js": "/static/js/main.d20c580b.js",
-    "static/js/453.41811d64.chunk.js": "/static/js/453.41811d64.chunk.js",
-    "static/media/Weather.png": "/static/media/Weather.4e799b3b9c2017b2b330.png",
-    "static/media/Password.png": "/static/media/Password.b24641e4a585449c707b.png",
-    "static/media/Books.png": "/static/media/Books.d010a98f2ab4e6d05f34.png",
-    "static/media/Quiz.png": "/static/media/Quiz.3a6ab8dd2525569af061.png",
-    "static/media/Scheduler.png": "/static/media/Scheduler.b61fc481deccefef71b0.png",
-    "static/media/logo.png": "/static/media/logo.d6674f02cccc388ddd71.png",
-    "index.html": "/index.html",
-    "main.0b34ea3d.css.map": "/static/css/main.0b34ea3d.css.map",
-    "main.d20c580b.js.map": "/static/js/main.d20c580b.js.map",
-    "453.41811d64.chunk.js.map": "/static/js/453.41811d64.chunk.js.map"
+    "main.css": "/portfolio/static/css/main.0b34ea3d.css",
+    "main.js": "/portfolio/static/js/main.46325be2.js",
+    "static/js/453.41811d64.chunk.js": "/portfolio/static/js/453.41811d64.chunk.js",
+    "static/media/Weather.png": "/portfolio/static/media/Weather.4e799b3b9c2017b2b330.png",
+    "static/media/Password.png": "/portfolio/static/media/Password.b24641e4a585449c707b.png",
+    "static/media/Books.png": "/portfolio/static/media/Books.d010a98f2ab4e6d05f34.png",
+    "static/media/Quiz.png": "/portfolio/static/media/Quiz.3a6ab8dd2525569af061.png",
+    "static/media/Scheduler.png": "/portfolio/static/media/Scheduler.b61fc481deccefef71b0.png",
+    "static/media/logo.png": "/portfolio/static/media/logo.d6674f02cccc388ddd71.png",
+    "index.html": "/portfolio/index.html",
+    "main.0b34ea3d.css.map": "/portfolio/static/css/main.0b34ea3d.css.map",
+    "main.46325be2.js.map": "/portfolio/static/js/main.46325be2.js.map",
+    "453.41811d64.chunk.js.map": "/portfolio/static/js/453.41811d64.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0b34ea3d.css",
-    "static/js/main.d20c580b.js"
+    "static/js/main.46325be2.js"
   ]
 }
