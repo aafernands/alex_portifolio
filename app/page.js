@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <h1>Welcome to Portfolio Page</h1>
+        <h1>Welcome to Portfolio Page!</h1>
       </main>
       <footer className={styles.footer}>
         <p> © {currentDate} | FNDS Labs All rights reserved.
